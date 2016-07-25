@@ -4,10 +4,10 @@ test:
   
 deployment:
  production:
-  branch:master
+  branch: master
   commands: -aws s3 sync html:s3://prod.circlecitest --delete
   
  staging:
-  branch:staging
+  branch: staging
   commands: -aws s3 sync html/s3://stg.circlecitest --delete
   
