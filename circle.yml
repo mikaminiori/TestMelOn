@@ -1,13 +1,24 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+    override:
+        - sudo pip install awscli
+    post:
+        - aws configure set region ap-northeast-1
 test:
  override:
   - echo Hello MelOn
   
 deployment:
- production:
-  branch: master
-  commands: -aws s3 sync html:s3://prod.circlecitest --delete
-  
- staging:
-  branch: staging
-  commands: -aws s3 sync html/s3://stg.circlecitest --delete
+  production:
+    branch: master
+    commands:
+      - aws s3 sync html/ s3://prod.circlecitest/ --delete
+  staging:
+    branch: staging
+    commands:
+      - aws s3 sync html/ s3://stg.circlecitest/ --delete  
+
   
