@@ -1,3 +1,13 @@
 test:
  override:
   - echo Hello MelOn
+  
+deployment:
+ production:
+  branch:master
+  commands: -aws s3 sync html:s3://prod.circlecitest --delete
+  
+ staging:
+  branch:staging
+  commands: -aws s3 sync html/s3://stg.circlecitest --delete
+  
