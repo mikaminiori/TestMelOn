@@ -28,11 +28,11 @@ deployment:
     　testMelOndeploy:
       　deployment_group: testdeploy
       　application_root: /
-    　   region:ap-norhteast-1
-      　   revision_location:
-    　  　  revision_type: S3
-        　s3_location:
-        　  bucket: testmkamin2
-        　  key_pattern: '{BUILD_NUM}_{COMMIT}.zip'
+      　region: ap-northeast-1
+      　revision_location
+      　 revison_type: S3
+      　 s3_location:
+      　  bucket: testmkamin2
+      　  key_pattern: '{BUILED_NUM}_{COMMIT}.zip'
 
   
