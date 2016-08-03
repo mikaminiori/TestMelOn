@@ -27,7 +27,7 @@ deployment:
   codedeploy:
     testMelOndeploy:
       deployment_group: testdeploy
-      application_root: /
+      application_root: ~/var/www/http
       region: ap-northeast-1
       revision_location:
        revison_type: S3
