@@ -25,14 +25,14 @@ deployment:
     commands:
       - aws s3 sync ./ s3://stg.circlecitest/ --delete  
   　codedeploy:
-    　testMelOndeploy:
-      　deployment_group: testdeploy
-      　application_root: /
-      　region: ap-northeast-1
-      　revision_location:
-      　 revison_type: S3
-      　 s3_location:
-      　  bucket: testmkamin2
-      　  key_pattern: '{BUILED_NUM}_{COMMIT}.zip'
+    testMelOndeploy:
+      deployment_group: testdeploy
+      application_root: /
+      region: ap-northeast-1
+      revision_location:
+       revison_type: S3
+       s3_location:
+        bucket: testmkamin2
+        key_pattern: '{BUILED_NUM}_{COMMIT}.zip'
 
   
