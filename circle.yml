@@ -15,8 +15,8 @@ test:
   - echo Hello MelOn
   
 deployment:
-#  production:
-#    branch: master
+  production:
+    branch: master
 #    commands:
 #      - aws s3 sync ./ s3://prod.circlecitest/ --delete
 
