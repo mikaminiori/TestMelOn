@@ -24,7 +24,7 @@ deployment:
     branch: staging
     commands:
       - aws s3 sync ./ s3://stg.circlecitest/ --delete  
-  　codedeploy:
+  codedeploy:
     testMelOndeploy:
       deployment_group: testdeploy
       application_root: /
