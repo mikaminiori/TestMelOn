@@ -9,7 +9,7 @@ dependencies:
         - sudo pip install awscli
     post:
         - aws configure set region ap-northeast-1
-        -npm run build
+        - npm run build
 test:
  override:
   - echo Hello MelOn
