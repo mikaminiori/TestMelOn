@@ -1,0 +1,5 @@
+version:0.0
+os: linux
+files:
+ - source: /https://github.com/mikaminiori/TestMelOn.git
+   destination: /var/www/http
