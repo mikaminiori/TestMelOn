@@ -29,7 +29,7 @@ deployment:
       　deployment_group: testdeploy
       　application_root: /
       　region: ap-northeast-1
-      　revision_location
+      　revision_location:
       　 revison_type: S3
       　 s3_location:
       　  bucket: testmkamin2
