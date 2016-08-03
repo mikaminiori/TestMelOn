@@ -1,7 +1,7 @@
 machine:
   timezone:
     Asia/Tokyo
-  post 
+  post:
     - npm install g npm@3.3.12
 
 dependencies:
