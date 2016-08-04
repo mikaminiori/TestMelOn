@@ -18,6 +18,15 @@ deployment:
   production:
     branch: master
     codedeploy:
+      testMelOndeploy:
+        application_root: ~/var/www/http
+        region: ap-northeast-1
+        revision_location:
+         revison_type: S3
+         s3_location:
+          bucket: stg.circlecitest
+          key_pattern: '{BUILD_NUM}_{COMMIT}.zip'
+        deployment_group: testdeploy
 #    commands:
 #      - aws s3 sync ./ s3://prod.circlecitest/ --delete
 
