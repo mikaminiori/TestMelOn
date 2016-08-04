@@ -23,7 +23,7 @@ deployment:
         region: ap-northeast-1
         revision_location:
          revison_type: S3
-        s3_location:
+         s3_location:
           bucket: stg.circlecitest
           key_pattern: '{BUILD_NUM}_{COMMIT}.zip'
         deployment_group: testdeploy
