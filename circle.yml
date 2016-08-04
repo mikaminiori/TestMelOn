@@ -17,6 +17,7 @@ test:
 deployment:
   production:
     branch: master
+    codedeploy:
 #    commands:
 #      - aws s3 sync ./ s3://prod.circlecitest/ --delete
 
