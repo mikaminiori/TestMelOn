@@ -28,7 +28,7 @@ deployment:
           key_pattern: '{BUILD_NUM}_{COMMIT}.zip'
         deployment_group: testdeploy
 #    commands:
-#      - aws s3 sync ./ s3://prod.circlecitest/ --delete
+#    - aws s3 sync ./ s3://prod.circlecitest/ --delete
 
   staging:
     branch: staging
