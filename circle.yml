@@ -27,13 +27,14 @@ deployment:
           bucket: stg.circlecitest
           key_pattern: '{BUILD_NUM}_{COMMIT}.zip'
         deployment_group: testdeploy
+        deployment_config: CodeDeployDefault.AllAtOnce
 #    commands:
 #    - aws s3 sync ./ s3://prod.circlecitest/ --delete
 
   staging:
     branch: staging
-    commands:
-      - aws s3 sync ./ s3://stg.circlecitest/ --delete  
+#    commands:
+#      - aws s3 sync ./ s3://stg.circlecitest/ --delete  
     codedeploy:
       testMelOndeploy:
         application_root: ~/var/www/http
